@@ -1,9 +1,4 @@
-<div align="center">
-
-# The Popcorn Kernel
-
-</div>
-
+<h1 style="align-self:center"> The Popcorn Kernel </h1>
 Welcome to the Popcorn Kernel project! Our mission is to build a powerful and innovative kernel within the TRANS ecosystem. We aim to create a robust and efficient operating system that enhances user experience while promoting inclusivity and diversity.
 
 <div align="center">
