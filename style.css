@@ -1,11 +1,16 @@
 * {
     align-content: center
-  }
+}
 
   /* Default styles for light theme */
 body {
     background-color: #ffffff;
     color: #000000;
+}
+
+#top_div {
+  background-color: dimgray;
+  border-radius: 0px 0px 20px 20px
 }
 
 #mainbuttons {
