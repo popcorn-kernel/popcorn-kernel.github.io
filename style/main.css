@@ -46,7 +46,6 @@ a {
 }
 
 /* --- header --- */
-/* i fucking hate css like who the fuck woke up one day and was like "yeah im going to make this shit styling language" */
 header {
     display: flex;
     flex-direction: row;
