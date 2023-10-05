@@ -46,6 +46,7 @@ a {
 }
 
 /* --- header --- */
+/* i fucking hate css like who the fuck woke up one day and was like "yeah im going to make this shit styling language" */
 header {
     display: flex;
     flex-direction: row;
@@ -87,7 +88,6 @@ header h1 {
     background-size: 200% auto;
 }
 
-/* --- header end --- */
 
 /* --- details --- */
 .details {
@@ -115,7 +115,6 @@ header h1 {
     font-size: 3rem;
     font-weight: 1000;
     color: var(--color-text);
-    /* text border to make text more visible */
     -webkit-text-stroke: 2px var(--color-yellow);
     /* hazard tape background */
     background: repeating-linear-gradient(
@@ -134,7 +133,7 @@ header h1 {
     animation: move 50s linear infinite;
 }
 
-/* animation for background, make sure it does not go back and forth */
+/* animation for background */
 @keyframes move {
     0% {
         background-position: 0% 50%;
