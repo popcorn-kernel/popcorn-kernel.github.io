@@ -33,13 +33,22 @@
 
 @media only screen and (orientation: portrait) {
     html {
-        font-size: 12px;
+        font-size: 13px;
     }
     header .logo-container img {
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 50%;
+    }
+    .wip h1 {
+        animation: move 50s linear infinite;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    .wip h1 {
+        animation: move 150s linear infinite;
     }
 }
 
@@ -141,8 +150,6 @@ header h1 {
     background-clip: text;
     background-size: 200% auto;
     text-align: center;
-    /* animation for background */
-    animation: move 50s linear infinite;
 }
 
 /* animation for background */
