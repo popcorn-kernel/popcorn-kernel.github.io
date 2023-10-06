@@ -33,7 +33,7 @@
 
 @media only screen and (orientation: portrait) {
     html {
-        font-size: 13px;
+        font-size: 12px;
     }
     header .logo-container img {
         display: block;
@@ -44,13 +44,13 @@
     .wip h1 {
         animation: move 50s linear infinite;
     }
-}
+    }
 
 @media only screen and (orientation: landscape) {
     .wip h1 {
         animation: move 150s linear infinite;
     }
-}
+        }
 
 .container {
     min-height: calc(100vh - 160px);
