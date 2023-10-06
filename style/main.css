@@ -47,8 +47,8 @@ a {
 
 /* --- header --- */
 header {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    /*flex-direction: row;*/
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
