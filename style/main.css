@@ -63,8 +63,8 @@ header {
 
 /* image-container class */
 header .image-container {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    /*flex-direction: row;*/
     justify-content: space-between;
     align-items: center;
 }
