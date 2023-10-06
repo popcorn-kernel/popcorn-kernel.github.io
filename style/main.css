@@ -35,6 +35,12 @@
     html {
         font-size: 10px;
     }
+    header .logo-container img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
 }
 
 /* set default font */
@@ -72,7 +78,7 @@ header .logo-container img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 75%;
 }
 
 
