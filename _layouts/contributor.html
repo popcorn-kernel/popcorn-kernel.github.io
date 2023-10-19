@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/path/to/style.css">
+    <title>{{ page.name }}</title>
+</head>
+
+<div class="panel-parent row">
+    <h3 class="text-center gradient-text">{{page.username}}'s Contributor Page</h3>
+    <div class="col-lg-3 col-md-3 col-sm-4 col-6 panel text-center">
+        <h5 class="gradient-text">{{page.username}}</h5>
+        <h6 class="text-center">{{page.name}}  - {{page.pronouns}}</h6>
+        <p class="text-center"><small><a>{{page.roles}}</a></small></p>
+        <img class="rounded mx-auto d-block" src="{{ contributor.picture }}", style="width: 100px">
+        <img class="rounded mx-auto d-block" src="{{page.picture}}" style="width: 100px" alt="Profile picture">
+
+        <blockquote class="blockquote">
+            <p>{{page.bio}}</p>
+            <footer class="blockquote-footer">{{ page.username }}</footer>
+        </blockquote>
+    </div>
+    <section class="  col bio row-item panel">
+        {{ content }}
+    </section>
+</div>

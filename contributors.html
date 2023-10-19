@@ -1,0 +1,32 @@
+---
+title: Contributors
+layout: default
+---
+
+
+<div class="panel-parent row">
+    <h3 class="text-center gradient-text">Contributors</h3>
+    <div class="panel">
+        Want to be on here? Please submit a pull request and put a <a class="gradient-text">Markdown</a> file in the
+        <a class="gradient-text">_contributors</a> directory.
+    </div>
+
+    {% for contributor in site.contributors %}
+    <div class="panel col-lg-3 col-md-3 col-sm-4 col-6">
+        <h5 class="text-center gradient-text">{{ contributor.username }}</h5>
+        <h6 class="text-center">{{contributor.name}} - {{contributor.pronouns}}</h6>
+        <p class="text-center"><small><a>{{contributor.roles}}</a></small></p>
+        <img class="rounded mx-auto d-block" src="{{ contributor.picture }}" , style="width: 100px">
+        <blockquote class="blockquote">
+            <p>{{contributor.bio}}</p>
+            <footer class="blockquote-footer">{{ contributor.username }}</footer>
+        </blockquote>
+
+        <div class="d-flex justify-content-center">
+            <a href="{{ contributor.url }}">
+                <button type="button" class="btn btn-primary">Visit Contributor Page</button>
+            </a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
