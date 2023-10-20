@@ -1,0 +1,29 @@
+
+:root {
+    --color-rosewater: color-mix(in srgb, #f5e0dc, var(--color-tint));
+    --color-flamingo: color-mix(in srgb, #f2cdcd, var(--color-tint));
+    --color-pink: color-mix(in srgb, #f5c2e7, var(--color-tint));
+    --color-mauve: color-mix(in srgb, #cba6f7, var(--color-tint));
+    --color-red: color-mix(in srgb, #f38ba8, var(--color-tint));
+    --color-maroon: color-mix(in srgb, #eba0ac, var(--color-tint));
+    --color-peach: color-mix(in srgb, #fab387, var(--color-tint));
+    --color-yellow: color-mix(in srgb, #f9e2af, var(--color-tint));
+    --color-green: color-mix(in srgb, #a6e3a1, var(--color-tint));
+    --color-teal: color-mix(in srgb, #94e2d5, var(--color-tint));
+    --color-sky: color-mix(in srgb, #89dceb, var(--color-tint));
+    --color-sapphire: color-mix(in srgb, #74c7ec, var(--color-tint));
+    --color-blue: color-mix(in srgb, #89b4fa, var(--color-tint));
+    --color-lavender: color-mix(in srgb, #b4befe, var(--color-tint));
+    --color-text: color-mix(in srgb, #cdd6f4, var(--color-tint));
+    --color-subtext1: #bac2de;
+    --color-subtext0: #a6adc8;
+    --color-overlay2: #9399b2;
+    --color-overlay1: #7f849c;
+    --color-overlay0: #6c7086;
+    --color-surface2: #585b70;
+    --color-surface1: #45475a;
+    --color-surface0: #313244;
+    --color-base: #1e1e2e;
+    --color-mantle: #181825;
+    --color-crust: #11111b;
+}

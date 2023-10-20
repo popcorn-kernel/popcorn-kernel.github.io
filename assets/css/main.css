@@ -1,53 +1,14 @@
 /* get fira code font */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 
-/* define color variables */
-:root {
-    --color-rosewater: #f5e0dc;
-    --color-flamingo: #f2cdcd;
-    --color-pink: #f5c2e7;
-    --color-mauve: #cba6f7;
-    --color-red: #f38ba8;
-    --color-maroon: #eba0ac;
-    --color-peach: #fab387;
-    --color-yellow: #f9e2af;
-    --color-green: #a6e3a1;
-    --color-teal: #94e2d5;
-    --color-sky: #89dceb;
-    --color-sapphire: #74c7ec;
-    --color-blue: #89b4fa;
-    --color-lavender: #b4befe;
-    --color-text: #cdd6f4;
-    --color-subtext1: #bac2de;
-    --color-subtext0: #a6adc8;
-    --color-overlay2: #9399b2;
-    --color-overlay1: #7f849c;
-    --color-overlay0: #6c7086;
-    --color-surface2: #585b70;
-    --color-surface1: #45475a;
-    --color-surface0: #313244;
-    --color-base: #1e1e2e;
-    --color-mantle: #181825;
-    --color-crust: #11111b;
-}
-
 @media only screen and (orientation: portrait) {
-    html {
-        font-size: 12px;
-    }
-    header .logo-container img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-    }
-    .wip h1 {
+    .construction-text {
         animation: move 50s linear infinite;
     }
 }
 
 @media only screen and (orientation: landscape) {
-    .wip h1 {
+    .construction-text {
         animation: move 150s linear infinite;
     }
 }
@@ -83,19 +44,17 @@ a {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
 }*/
 
-/* image-container class */
-header .logo-container img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
+@media only screen and (max-width: 767px) {
+    .panel-parent {
+        flex-direction: column-reverse;
+    }
 }
-
 
 .gradient-text {
     font-weight: 1000;
-    color: var(--color-text);
     text-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+    background-size: 200% auto;
+    color: var(--color-text);
     /* gradient animation of blue and pink */
     background: linear-gradient(
             90deg,
@@ -105,7 +64,6 @@ header .logo-container img {
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-size: 200% auto;
 }
 
 
@@ -287,7 +245,6 @@ header .logo-container img {
     background-position: 100% 100%;
 }
 
-
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 0%;
@@ -296,18 +253,3 @@ header .logo-container img {
         background-position: 200% 0%;
     }
 }
-
-/* --- footer --- */
-
-.footer {
-    padding: 1rem 2rem;
-    background-color: var(--color-crust);
-    border-radius: 0.5rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
-    margin-top: 1rem;
-
-    /* move footer to bottom middle of page */
-    /* height: 100px; */
-    /* margin-top: -50px; */
-}
-

@@ -8,14 +8,14 @@ layout: default
     <title>{{ page.name }}</title>
 </head>
 
-<div class="panel-parent row">
+<div class="panel-parent">
     <h3 class="text-center gradient-text">{{page.username}}'s Contributor Page</h3>
+    <div class="row ">
     <div class="col-lg-3 col-md-3 col-sm-4 col-6 panel text-center">
         <!-- Left side panel -->
         <h5 class="gradient-text">{{page.username}}</h5>
         <h6 class="text-center">{{page.name}}  - {{page.pronouns}}</h6>
         <p class="text-center"><small><a>{{page.roles}}</a></small></p>
-        <img class="rounded mx-auto d-block" src="{{ contributor.picture }}", style="width: 100px">
         <img class="rounded mx-auto d-block" src="{{page.picture}}" style="width: 100px" alt="Profile picture">
 
         <blockquote class="blockquote">
@@ -23,8 +23,9 @@ layout: default
             <footer class="blockquote-footer">{{ page.username }}</footer>
         </blockquote>
     </div>
-    <section class="  col bio row-item panel">
+    <section class="col bio panel">
         <!-- Right body panel -->
         {{ content }}
     </section>
+    </div>
 </div>

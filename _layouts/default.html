@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link rel='icon' href='{{ site.baseurl }}/assets/img/popcorn.png' type='image/x-icon'>
+    <link rel='icon' class="popcorn-icon" href='{{ site.baseurl }}/assets/img/popcorn-white.svg' type='image/x-icon'>
     <meta name='description' content='The website for the popcorn project'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
@@ -12,6 +12,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
 
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/catppuccin_mocha.css">
+
+
+    <style>
+        :root
+        {
+            --color-tint: #FFFFFF
+        }
+    </style>
+    <script src="{{site.baseurl}}/assets/js/holiday.js" ></script>
+
+
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
 </head>
 <body class="container">
 
@@ -20,8 +33,8 @@
     <nav class="navbar" style=" padding: 0">
         <div class="navbar-brand text-center" style="padding: 0; padding-bottom: 8px"> <!-- Center the content within the brand div -->
             <a class="mx-auto text-center" href="{{ site.baseurl }}/"> <!-- Center the content horizontally -->
-                <img src="{{ site.baseurl }}/assets/img/popcorn.png" style="width: 65px"
-                     alt="the rust logo with the r replaced with a p, and the trans flag overlayed on it" class="img-fluid"/>
+                <img class="popcorn-icon" src="{{ site.baseurl }}/assets/img/popcorn-white.svg" style="width: 65px"
+                     alt="The popcorn kernel" class="img-fluid"/>
                <!-- <h5 class="gradient-text">the popcorn kernel</h5> -->
             </a>
         </div>
@@ -43,4 +56,22 @@
     </div>
 </footer>
 </body>
+<!-- We need to access site.baseurl to access assets. We can't do this from .js. -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Get the current date
+        var currentDate = new Date();
+
+        // Get the current month (zero-based index)
+        var currentMonth = currentDate.getMonth();
+        console.log(currentMonth)
+        // Check if it is Pride Month
+        if (currentMonth === 5) {
+            const iconElements = document.querySelectorAll('.popcorn-icon');
+            iconElements.forEach(element => {
+                element.setAttribute("src", "{{ site.baseurl }}/assets/img/popcorn-pride.svg");
+            });
+        }
+    });
+</script>
 </html>
