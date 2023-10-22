@@ -1,0 +1,24 @@
+---
+title: Social
+layout: default
+---
+
+
+
+<div class="row panel-parent">
+    <div class="panel">
+        Want to work or connect with us and the community? We have some places for you to hang out and chatter.
+    </div>
+
+    {% for social in site.social %}
+    <!-- Individual social panel -->
+    <div class="panel col-md">
+        <h2 class="text-center gradient-text">{{ social.title }}</h2>
+        <h6 class="text-center">{{ social.description }}</h6>
+
+        <div class="d-flex justify-content-center">
+            <a type="button" class="btn btn-primary btn-lg" href="{{ social.link }}">{{ social.button }}</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
