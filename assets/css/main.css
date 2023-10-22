@@ -53,14 +53,13 @@ a {
 .gradient-text {
     font-weight: 1000;
     text-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
-    background-size: 200% auto;
     color: var(--color-text);
     /* gradient animation of blue and pink */
     background: linear-gradient(
             90deg,
             var(--color-blue),
-            var(--color-pink),
-            var(--color-blue)
+            var(--color-pink)
+          /*  var(--color-blue)*/
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -97,7 +96,7 @@ a {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.1rem;
 }
 
 .panel-parent {

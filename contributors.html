@@ -17,14 +17,14 @@ layout: default
         <h5 class="text-center gradient-text">{{ contributor.username }}</h5>
         <h6 class="text-center">{{contributor.name}} - {{contributor.pronouns}}</h6>
         <p class="text-center"><small><a>{{contributor.roles}}</a></small></p>
-        <img class="rounded mx-auto d-block" src="{{ contributor.picture }}" , style="width: 100px">
+        <img class="rounded mx-auto d-block" src="{{ contributor.picture }}", style="width: 100px">
         <blockquote class="blockquote">
             <p><small>{{contributor.bio}}</small></p>
             <footer class="blockquote-footer">{{ contributor.username }}</footer>
         </blockquote>
 
         <div class="d-flex justify-content-center">
-            <a href="{{ site.baseurl }}/{{ contributor.url }}">
+            <a href="{{ site.url }}/{{ contributor.url }}">
                 <button type="button" class="btn btn-primary">Visit Contributor Page</button>
             </a>
         </div>

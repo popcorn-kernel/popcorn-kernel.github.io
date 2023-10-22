@@ -21,7 +21,6 @@
             --color-tint: #FFFFFF
         }
     </style>
-    <script src="{{site.baseurl}}/assets/js/holiday.js" ></script>
 
 
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
@@ -48,13 +47,6 @@
 
 {{ content }}
 
-<footer class="footer">
-    <!-- Put your footer stuff here. -->
-    <div class="panel">
-        <h5>This website steals no cookies, you can keep them for yourself!</h5>
-        <small>the popcorn kernel is licensed under the MIT license, see <a href="https://github.com/popcorn-kernel/popcorn-kernel.github.io/blob/main/LICENSE">here</a> for more details.</small>
-    </div>
-</footer>
 </body>
 <!-- We need to access site.baseurl to access assets. We can't do this from .js. -->
 <script>
@@ -64,14 +56,13 @@
 
         // Get the current month (zero-based index)
         var currentMonth = currentDate.getMonth();
-        console.log(currentMonth)
         // Check if it is Pride Month
-        if (currentMonth === 5) {
+     //   if (currentMonth === 5) {
             const iconElements = document.querySelectorAll('.popcorn-icon');
             iconElements.forEach(element => {
                 element.setAttribute("src", "{{ site.baseurl }}/assets/img/popcorn-pride.svg");
             });
-        }
+     //   }
     });
 </script>
 </html>

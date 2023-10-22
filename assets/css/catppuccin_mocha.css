@@ -1,20 +1,20 @@
 
 :root {
-    --color-rosewater: color-mix(in srgb, #f5e0dc, var(--color-tint));
-    --color-flamingo: color-mix(in srgb, #f2cdcd, var(--color-tint));
-    --color-pink: color-mix(in srgb, #f5c2e7, var(--color-tint));
-    --color-mauve: color-mix(in srgb, #cba6f7, var(--color-tint));
-    --color-red: color-mix(in srgb, #f38ba8, var(--color-tint));
-    --color-maroon: color-mix(in srgb, #eba0ac, var(--color-tint));
-    --color-peach: color-mix(in srgb, #fab387, var(--color-tint));
-    --color-yellow: color-mix(in srgb, #f9e2af, var(--color-tint));
-    --color-green: color-mix(in srgb, #a6e3a1, var(--color-tint));
-    --color-teal: color-mix(in srgb, #94e2d5, var(--color-tint));
-    --color-sky: color-mix(in srgb, #89dceb, var(--color-tint));
-    --color-sapphire: color-mix(in srgb, #74c7ec, var(--color-tint));
-    --color-blue: color-mix(in srgb, #89b4fa, var(--color-tint));
-    --color-lavender: color-mix(in srgb, #b4befe, var(--color-tint));
-    --color-text: color-mix(in srgb, #cdd6f4, var(--color-tint));
+    --color-rosewater: #f5e0dc;
+    --color-flamingo: #f2cdcd;
+    --color-pink: #f5c2e7;
+    --color-mauve: #cba6f7;
+    --color-red: #f38ba8;
+    --color-maroon: #eba0ac;
+    --color-peach: #fab387;
+    --color-yellow: #f9e2af;
+    --color-green: #a6e3a1;
+    --color-teal: #94e2d5;
+    --color-sky: #89dceb;
+    --color-sapphire: #74c7ec;
+    --color-blue: #89b4fa;
+    --color-lavender: #b4befe;
+    --color-text: #cdd6f4;
     --color-subtext1: #bac2de;
     --color-subtext0: #a6adc8;
     --color-overlay2: #9399b2;
