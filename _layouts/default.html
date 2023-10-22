@@ -14,15 +14,6 @@
 
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/catppuccin_mocha.css">
 
-
-    <style>
-        :root
-        {
-            --color-tint: #FFFFFF
-        }
-    </style>
-
-
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
 </head>
 <body class="container">
@@ -48,21 +39,4 @@
 {{ content }}
 
 </body>
-<!-- We need to access site.baseurl to access assets. We can't do this from .js. -->
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        // Get the current date
-        var currentDate = new Date();
-
-        // Get the current month (zero-based index)
-        var currentMonth = currentDate.getMonth();
-        // Check if it is Pride Month
-     //   if (currentMonth === 5) {
-            const iconElements = document.querySelectorAll('.popcorn-icon');
-            iconElements.forEach(element => {
-                element.setAttribute("src", "{{ site.baseurl }}/assets/img/popcorn-pride.svg");
-            });
-     //   }
-    });
-</script>
 </html>
